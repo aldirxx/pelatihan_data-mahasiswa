@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(15px);
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+
+.input-box label{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width:  100%;
+    height: 50px;
+    background: transparent;
+    outline: none; border: none;
+    color: white;
+    font-size: 1em;
+    padding: 0 35px 0 5 px;
+}
+
+button{
+    width: 100%;
+    height: 40px; background: white;
+    cursor: pointer; font-size: 1em;
+    font-weight: 500; border-radius: 40px;
+}
+
+.register-link{
+    color: white;
+    font-size: 1em; text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
